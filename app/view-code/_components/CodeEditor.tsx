@@ -20,13 +20,13 @@ function CodeEditor({ codeResp, isReady }: any) {
                 }}
                 files={{
                     "/App.js": `${codeResp}`,
-
+                    
                 }} />
                 :
                 <SandpackProvider template="react"
                     theme={aquaBlue}
                     files={{
-                        "/app.js": {
+                        "/App.js": {
                             code: `${codeResp}`,
                             active: true
                         }
